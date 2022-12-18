@@ -5,7 +5,7 @@ import Header from "../Component/Header/Header";
 import Menubar from "../Component/Menubar/Menubar";
 
 const Main = () => {
-  const [minimizeMenu, setMinimizeMenu] = useState(true)
+  const [minimizeMenu, setMinimizeMenu] = useState(false)
   return (
     <div className="flex">
         <div>

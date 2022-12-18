@@ -123,7 +123,7 @@ const Menubar = ({ minimizeMenu }) => {
     },
   ];
   return (
-    <div className={`${minimizeMenu ? 'w-12': 'w-60'} w-60 h-full hidden md:block  bg-slate-800`}>
+    <div className={`${minimizeMenu ? 'w-12': 'w-60'} h-full hidden md:block  bg-slate-800`}>
       <div>
         <WebsiteBrand minimizeMenu={minimizeMenu}></WebsiteBrand>
       </div>
