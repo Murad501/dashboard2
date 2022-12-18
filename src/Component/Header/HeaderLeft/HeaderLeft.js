@@ -1,11 +1,11 @@
 import React from "react";
 import { FaAlignJustify, FaTelegramPlane, FaUnlock } from "react-icons/fa";
 
-const HeaderLeft = () => {
+const HeaderLeft = ({setMinimizeMenu, minimizeMenu}) => {
   return (
     <div className="flex gap-6 items-center mr-auto">
       <div className="flex items-center gap-3">
-        <span className="pr-3"><FaAlignJustify className="text-white"></FaAlignJustify></span>
+        <span onClick={()=>setMinimizeMenu(!minimizeMenu)} className="pr-3 hover:cursor-pointer"><FaAlignJustify className="text-white"></FaAlignJustify></span>
         <div className="hidden lg:block">
         <div className="flex items-center gap-3">
         <button className="bg-white text-gray-500 text-sm px-3 py-2 rounded-sm flex items-center gap-2">

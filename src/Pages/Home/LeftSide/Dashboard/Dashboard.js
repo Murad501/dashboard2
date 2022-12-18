@@ -8,7 +8,7 @@ import {
   FaRegEnvelope,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logoPlaceholder from "../../../Assets/logo-placeholder.jpg";
+import logoPlaceholder from "../../../../Assets/logo-placeholder.jpg";
 
 const Dashboard = () => {
   return (

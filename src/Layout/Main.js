@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
+import Footer from "../Component/Footer/Footer";
 import Header from "../Component/Header/Header";
 import Menubar from "../Component/Menubar/Menubar";
 
 const Main = () => {
+  const [minimizeMenu, setMinimizeMenu] = useState(true)
   return (
     <div className="flex">
         <div>
-            <Menubar></Menubar>
+            <Menubar minimizeMenu={minimizeMenu}></Menubar>
         </div>
       <div className="flex-1">
-        <Header></Header>
+        <Header setMinimizeMenu={setMinimizeMenu} minimizeMenu={minimizeMenu}></Header>
         <Outlet></Outlet>
+        <Footer></Footer>
       </div>
     </div>
   );
